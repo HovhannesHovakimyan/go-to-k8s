@@ -9,9 +9,9 @@ while (! docker stats --no-stream ); do
 done
 fi
 
-echo "Starting minikube..."
-minikube start --driver=virtualbox
-alias kubectl="minikube kubectl --"
+# echo "Starting minikube..."
+# minikube start --driver=virtualbox
+# alias kubectl="minikube kubectl --"
 
 echo "Building the Docker image."
 docker build -t hovhanneshovakimyan/api-image .
