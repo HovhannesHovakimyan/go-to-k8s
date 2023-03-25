@@ -14,7 +14,7 @@ minikube start --driver=virtualbox
 alias kubectl="minikube kubectl --"
 
 echo "Building the Docker image."
-docker build -t api-image .
+docker build -t hovhanneshovakimyan/api-image .
 
 echo "Creating myns namespace for Kubernetes"
 kubectl create namespace myns
